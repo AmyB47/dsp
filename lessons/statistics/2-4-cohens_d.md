@@ -24,11 +24,12 @@ After filtering to only the live births, I checked for any outliers in totalwgt_
 ```python
 import seaborn as sns
 sns.histplot(live_births['totalwgt_lb'])
+sns.histplot(live_births['prglngth'])
 ```
 
 ![Exercise2_4_chart1](../../img/ex2_4_chart1.png)
 
-I also graphed a histogram for the prglngth as preganancy length is also of interest for this question. 
+I also graphed a histogram for the prglngth as pregnancy length is also of interest for this question. 
 
 ![Exercise2_4_chart1](../../img/ex2_4_chart2.png)
 
@@ -69,7 +70,7 @@ live_births['prglngth'].value_counts().sort_index().head(10)
 | 21                        | 2     |
 | 22                        | 7     |
 
-After further review and to be consistent with the author's handling, I choose to keep these values. I then separated the live births subset into a group containing all the data for first births and another group with all the data for the other births. 
+After further review and to be consistent with the author's handling, I chose to keep these values. I then separated the live births subset into a group containing all the data for first births and another group with all the data for the other births. 
 
 ```python
 first_births = live_births[live_births['birthord'] == 1]
