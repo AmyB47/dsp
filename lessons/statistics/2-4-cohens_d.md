@@ -40,7 +40,7 @@ live_births['totalwgt_lb'].value_counts().sort_index().head(10)
 live_births['prglngth'].value_counts().sort_index().head(10)
 ```
 
-***Table 1. *** *Number of live births of the ten lowest values of totalwgt_lb.*
+***Table 1.*** *Number of live births of the ten lowest values of totalwgt_lb.*
 
 | Totalwgt_lb | Count |
 | ----------- | ----- |
