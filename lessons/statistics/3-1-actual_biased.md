@@ -12,8 +12,6 @@ Plot the actual and biased distributions, and compute their means.
 
 **Approach**
 
-------
-
 The author provided the NSFG respondent dataset as well as a custom Python library with a function to read the dataset into a Python Pandas dataframe.
 
 ```python
@@ -98,8 +96,6 @@ sum([x*p for x,p in pmf_biased.items()])
 
 
 **Solution**
-
-------
 
 The plot of the actual and biased distributions is:
 
