@@ -94,15 +94,15 @@ To use Bayes' Theorem to answer this question some additional probability calcul
 
 The probability of being an identical twin and male: 
 
-​			P(Identical Twin and Male) = P(ITM) = P(Identical Twin) * P(Male) = 1/300 * 1/2 = 1/600
+      P(Identical Twin and Male) = P(ITM) = P(Identical Twin) * P(Male) = 1/300 * 1/2 = 1/600
 
 With fraternal twins there are four possibilities of gender combinations {MM, FF, MF, FM} and the probability of being a male fraternal twin with a brother:
 
-​			P(Fraternal Twin and 2 Males) = P(FT2M) = P(Fraternal Twin) * P(MM) = 1/250 * 1/4 = 1/500
+      P(Fraternal Twin and 2 Males) = P(FT2M) = P(Fraternal Twin) * P(MM) = 1/250 * 1/4 = 1/500
 
 The probability of being a male and having a male twin, either identical or fraternal:
 
-​			P(ITM or FT2M) = P(TMM) = P(ITM) + P(FT2M) = 1/600 + 1/500 = 11/3000
+      P(ITM or FT2M) = P(TMM) = P(ITM) + P(FT2M) = 1/600 + 1/500 = 11/3000
 
 With these additional probability calculations, I used Bayes' Theorem to compute the probability that Elvis was an identical twin given that he had a twin brother. 
 $$
@@ -112,9 +112,9 @@ Note that P(TMM|ITM) is 1 since the probability of being a male and having a mal
 
 Filling in this equation with the probabilities calculated above:
 $$
-P(ITM|TMM) = \frac{(1/600)(1)}{11/3000
-}
+P(ITM|TMM) = \frac{(1/600)(1)}{11/3000}
 $$
+
 **Solution**
 
 The probability that Elvis was an identical twin given that he had a twin brother is 45.45%
