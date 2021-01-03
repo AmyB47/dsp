@@ -19,7 +19,7 @@ import nsfg
 resp = nsfg.ReadFemResp()
 ```
 
-I aggregated the counts of the respondent variable NUMKDHH by number of children under 18 in the household.  I put this information into a Python dictionary where the keys are the number of children under 18 in the household, and the values are the number of families in the survey that have this number of children. 
+I aggregated the counts of the respondent variable NUMKDHH by number of children under 18 in the household.  I put this information into a Python dictionary where the keys are the number of children under 18 in the household, and the values are the number of families in the survey that have this number of children. In total 7,643 households were surveyed.
 
 ```python
 counts_actual = dict(resp['numkdhh'].value_counts())
@@ -55,6 +55,17 @@ pmf_biased = {}
 for x, p in new_pmf.items():
     pmf_biased[x] = p / m   
 ```
+
+Another way to look at creating the biased distribution is to consider if rather than surveying 7,643 households, we had surveyed all the children in those households.  We would never have the instance of capturing households with no children.  There would, hypothetically, be 1,636 children that responded to say 1 child in they household. For all the 2 child households, the first child would say there are 2 children in the household, and the second child would say there are 2 children in the household. Similarly for 3, 4, and 5 children households as given in the table below.  In total there would be 7,828 children surveyed. 
+
+| Number of Children in Household | Number of Children Surveyed | Proportion           |
+| ------------------------------- | --------------------------- | -------------------- |
+| 0                               | 0                           | 0 / 7828 = 0         |
+| 1                               | 1*1636 =1636                | 1636 / 7828 = 0.2089 |
+| 2                               | 2*1500 = 3000               | 3000 / 7828 = 0.3832 |
+| 3                               | 3*666 = 1998                | 1998 / 7828 = 0.2552 |
+| 4                               | 4*196 = 784                 | 784 / 7828 = 0.1001  |
+| 5                               | 5*82 = 410                  | 410 / 7828 = 0.0523  |
 
 The PMF of the biased distribution looks like this:
 
@@ -104,6 +115,10 @@ The plot of the actual and biased distributions is:
 The mean of the actual distribution rounded to two decimal places is 1.02.
 
 The mean of the biased distribution rounded to two decimal places is 2.40.
+
+It is not surprising the mean of the actual distribution is less than the mean of the biased distribution, since the biased distribution did not capture any households with no children. 
+
+
 
 
 
