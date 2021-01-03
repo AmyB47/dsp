@@ -56,7 +56,7 @@ for x, p in new_pmf.items():
     pmf_biased[x] = p / m   
 ```
 
-Another way to look at creating the biased distribution is to consider if rather than surveying 7,643 households, we had surveyed all the children in those households.  We would never have the instance of capturing households with no children.  There would, hypothetically, be 1,636 children that responded to say 1 child in they household. For all the 2 child households, the first child would say there are 2 children in the household, and the second child would say there are 2 children in the household. Similarly for 3, 4, and 5 children households as given in the table below.  In total there would be 7,828 children surveyed. 
+Another way to look at creating the biased distribution is to consider if rather than surveying 7,643 households, we had surveyed all the children in those households.  We would never have the instance of capturing households with no children.  There would, hypothetically, be 1,636 children that responded to say 1 child in their household. For all the 2 child households, the first child would say there are 2 children in the household, and the second child would say there are 2 children in the household. Similarly for 3, 4, and 5 children households as given in the table below.  In total there would be 7,828 children surveyed. 
 
 | Number of Children in Household | Number of Children Surveyed | Proportion           |
 | ------------------------------- | --------------------------- | -------------------- |
