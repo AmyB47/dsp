@@ -116,7 +116,7 @@ CohenEffectSize(first_births['prglngth'], other_births['prglngth'])
 
 **Solution**
 
-The Cohen's D of the difference in totalwgt_lb of first births and all other births is -0.08867. 
+The Cohen's D of the difference in totalwgt_lb of first births and all other births is -0.08867. Thus, there is very small effect on totalwgt_lb being less with the first birth. 
 
-The Cohen's D of the difference in pregnancy length of first births and all other births is 0.028879. 
+The Cohen's D of the difference in pregnancy length of first births and all other births is 0.028879. Thus, there is a small effect on pregnancy length being longer with the first birth. 
 
